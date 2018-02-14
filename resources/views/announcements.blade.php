@@ -1,9 +1,19 @@
-@section('Announcements')
+@extends('home')
 
-use BBS\Announcement;
+@section('announcements')
+  @foreach (BBS\Models\Announcement::all() as $announcement)
+    <div class="flex-box">  {{ $announcement->announcement_text }} </div>
+  @endforeach
+@endsection
 
-$announcements = App\Announcement::all();
-foreach ($announcements as $announcement) {
-  echo $announcement->name;
-}
+@section('bookings')
+  {{ "BOOINGS" }}
+@endsection
+
+@section('availability')
+  {{ 'AVAILABILITY' }}
+@endsection
+
+@section('upcoming')
+  {{ 'UPCOMING' }}
 @endsection

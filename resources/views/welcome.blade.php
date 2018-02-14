@@ -81,8 +81,6 @@
                 <div class="title m-b-md">
                     BBS Booking
                 </div>
-
-
             </div>
         </div>
     </body>

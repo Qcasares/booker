@@ -20,8 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('users', function()
+Route::get('/announcements', function()
 {
-    $users = User::all();
-    return View::make('home')->with('users', $users);
-});
+    $announcements = BBS\Models\announcement::all();
+    return View('announcements');
+}
+);

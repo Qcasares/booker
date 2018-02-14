@@ -13,11 +13,12 @@
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success">
-                            {{ session('status') }}
-                            $users = User::all();
-
                         </div>
                     @endif
+                    @yield('announcements')
+                    @yield('bookings')
+                    @yield('availability')
+                    @yield('upcoming')
                 </div>
             </div>
         </div>

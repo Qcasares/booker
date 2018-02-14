@@ -118,4 +118,8 @@ class User extends Eloquent implements Authenticatable
 		return $this->belongsToMany(\BBS\Models\Resource::class, 'user_resource_permissions', 'id')
 					->withPivot('permission_id');
 	}
+
+	public function user_details(){
+			return $this::getall();
+	}
 }

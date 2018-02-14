@@ -2,8 +2,8 @@
 
 @section('content')
   <div class="card">
-      @foreach ($users as $user)
-        <div> {{ $users->fname; }}
+      @foreach ($user as $u)
+        <div> {{ $us->fname; }}
         </div>
       @endforeach
       </div>
