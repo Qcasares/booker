@@ -1,27 +1,16 @@
 @extends('layouts.app')
 
-@section('navigation')
-  @include('partials.navigation')
-@endsection
-
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card card-default">
-                <div class="card-header">Dashboard</div>
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                        </div>
-                    @endif
-                    @yield('announcements')
-                    @yield('bookings')
-                    @yield('availability')
-                    @yield('upcoming')
-                </div>
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-expand">
+
+            <div class="uk-card uk-card-primary uk-card-body uk-width-1-2@m uk-align-center">
+                <h3 class="uk-card-title"></h3>
+
             </div>
+
         </div>
-    </div>
 </div>
+
 @endsection

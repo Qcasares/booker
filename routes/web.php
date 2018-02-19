@@ -19,10 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/dashboard', 'dashboardController@index');
 
-Route::get('/announcements', function()
-{
-    $announcements = BBS\Models\announcement::all();
-    return View('announcements');
-}
-);
+Route::get('/schedule', 'scheduleController@show');
+
+

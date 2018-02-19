@@ -160,7 +160,7 @@ return [
         // BBS\Providers\BroadcastServiceProvider::class,
         BBS\Providers\EventServiceProvider::class,
         BBS\Providers\RouteServiceProvider::class,
-
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*
@@ -209,6 +209,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
 
     ],
 
